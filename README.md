@@ -9,6 +9,5 @@ If project have multiple modules, then gradle recompile only changed module. Tha
 
 ## Structure
 Every branch will have it's own configuration, that will be described in README.
-Results are collected with [Build Tracker Plugin.](https://github.com/passy/build-time-tracker-plugin)
 
 
