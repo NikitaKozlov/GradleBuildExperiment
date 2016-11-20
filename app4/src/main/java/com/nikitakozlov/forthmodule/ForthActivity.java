@@ -15,7 +15,7 @@ public class ForthActivity extends AppCompatActivity {
     TextView textView;
 
     public void doSmth() {
-        new Foo149().foo5();
+        new Foo149().foo4();
     }
 
     @Override

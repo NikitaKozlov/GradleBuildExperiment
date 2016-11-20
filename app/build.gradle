@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'android-apt'
+apply plugin: "com.dorongold.task-tree"
 
 android {
     compileSdkVersion 25
@@ -33,8 +34,16 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
-    compile project(':app2')
-    compile project(':app3')
-    compile project(':app4')
-    compile project(':app5')
+
+    debugCompile project(path: ':app2', configuration: "debug")
+    releaseCompile project(path: ':app2', configuration: "release")
+
+    debugCompile project(path: ':app3', configuration: "debug")
+    releaseCompile project(path: ':app3', configuration: "release")
+
+    debugCompile project(path: ':app4', configuration: "debug")
+    releaseCompile project(path: ':app4', configuration: "release")
+
+    debugCompile project(path: ':app5', configuration: "debug")
+    releaseCompile project(path: ':app5', configuration: "release")
 }
