@@ -9,14 +9,12 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.nikitakozlov.gradlebuildexperiment.gen.package_0.Foo20;
+import com.nikitakozlov.gradlebuildexperiment.gen.package_0.Foo149;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
-
-    public static boolean mFalse = false;
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
@@ -39,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        new Foo20().foo3();
+        new Foo149().foo4();
     }
 
     @Override
