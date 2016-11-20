@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        new Foo20().foo5();
+        new Foo20().foo3();
     }
 
     @Override
