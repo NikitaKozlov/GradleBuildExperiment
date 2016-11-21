@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.nikitakozlov.forthmodule.gen.package_0.Foo149;
+import com.nikitakozlov.forthmodule.generated.package_0.Foo149;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
