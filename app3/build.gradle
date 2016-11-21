@@ -1,5 +1,16 @@
 apply plugin: 'com.android.library'
 
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
+    }
+}
+
+apply plugin: 'com.jakewharton.butterknife'
+
 android {
     compileSdkVersion 25
     buildToolsVersion "24.0.3"
@@ -29,5 +40,9 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.0.0'
+
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
     testCompile 'junit:junit:4.12'
 }

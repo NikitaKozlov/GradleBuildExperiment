@@ -1,17 +1,17 @@
-package com.nikitakozlov.fifthmodule;
+package com.nikitakozlov.thirdmodule;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.nikitakozlov.fifthmodule.generated.package_0.Foo149;
+import com.nikitakozlov.thirdmodule.generated.package_0.Foo149;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class FifthActivity extends AppCompatActivity {
+public class ThirdActivity extends AppCompatActivity {
 
-    @BindView(R2.id.fifth_text_view)
+    @BindView(R2.id.third_text_view)
     TextView textView;
 
     public void doSmth() {
@@ -21,7 +21,7 @@ public class FifthActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fifth);
+        setContentView(R.layout.activity_third);
         ButterKnife.bind(this);
     }
 }

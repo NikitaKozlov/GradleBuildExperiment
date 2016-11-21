@@ -9,10 +9,11 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.nikitakozlov.fifthmodule.FifthActivity;
 import com.nikitakozlov.forthmodule.ForthActivity;
 import com.nikitakozlov.gradlebuildexperiment.gen.package_0.Foo20;
-import com.nikitakozlov.secondmodule.SecondModule;
-import com.nikitakozlov.thirdmodule.ThirdModule;
+import com.nikitakozlov.secondmodule.SecondActivity;
+import com.nikitakozlov.thirdmodule.ThirdActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -43,10 +44,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         new Foo20().foo3();
-        new SecondModule().doSmth();
-        new ThirdModule().doSmth();
+        new SecondActivity().doSmth();
+        new ThirdActivity().doSmth();
         new ForthActivity().doSmth();
-
+        new FifthActivity().doSmth();
     }
 
     @Override
