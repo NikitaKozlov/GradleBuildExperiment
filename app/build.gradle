@@ -36,4 +36,6 @@ dependencies {
     compile project(':app2')
     compile project(':app3')
     compile project(':app4')
+    compile project(':app5')
+    compile project(':app6')
 }
