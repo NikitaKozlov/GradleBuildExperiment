@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.nikitakozlov.gradlebuildexperiment.gen.package_0.Foo149;
+import com.nikitakozlov.gradlebuildexperiment.generated.package_0.Foo149;
 
 public class MainActivity extends AppCompatActivity {
 
