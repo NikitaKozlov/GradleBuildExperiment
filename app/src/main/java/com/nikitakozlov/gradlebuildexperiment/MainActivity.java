@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.nikitakozlov.forthmodule.ForthActivity;
 import com.nikitakozlov.gradlebuildexperiment.generated.package_0.Foo20;
 import com.nikitakozlov.secondmodule.SecondActivity;
 import com.nikitakozlov.thirdmodule.ThirdActivity;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         new Foo20().foo3();
         new SecondActivity().doSmth();
         new ThirdActivity().doSmth();
+        new ForthActivity().doSmth();
     }
 
     @Override

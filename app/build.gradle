@@ -35,4 +35,5 @@ dependencies {
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
     compile project(':app2')
     compile project(':app3')
+    compile project(':app4')
 }
