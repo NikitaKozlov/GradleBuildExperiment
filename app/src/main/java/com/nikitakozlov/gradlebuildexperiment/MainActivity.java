@@ -11,7 +11,7 @@ import android.view.MenuItem;
 
 import com.nikitakozlov.fifthmodule.FifthActivity;
 import com.nikitakozlov.forthmodule.ForthActivity;
-import com.nikitakozlov.gradlebuildexperiment.gen.package_0.Foo20;
+import com.nikitakozlov.gradlebuildexperiment.generated.package_0.Foo20;
 import com.nikitakozlov.secondmodule.SecondActivity;
 import com.nikitakozlov.thirdmodule.ThirdActivity;
 
