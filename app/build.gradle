@@ -33,6 +33,10 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
-    compile project(':app2')
-    compile project(':app3')
+
+    debugCompile project(path: ':app2', configuration: "debug")
+    releaseCompile project(path: ':app2', configuration: "release")
+
+    debugCompile project(path: ':app3', configuration: "debug")
+    releaseCompile project(path: ':app3', configuration: "release")
 }
