@@ -27,15 +27,26 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     // Multidex
-    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:multidex:1.0.1'
     compile 'com.android.support:appcompat-v7:25.0.0'
     compile 'com.android.support:design:25.0.0'
     testCompile 'junit:junit:4.12'
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
-    compile project(':app2')
-    compile project(':app3')
-    compile project(':app4')
-    compile project(':app5')
-    compile project(':app6')
+
+    debugCompile project(path: ':app2', configuration: "debug")
+    releaseCompile project(path: ':app2', configuration: "release")
+
+    debugCompile project(path: ':app3', configuration: "debug")
+    releaseCompile project(path: ':app3', configuration: "release")
+
+    debugCompile project(path: ':app4', configuration: "debug")
+    releaseCompile project(path: ':app4', configuration: "release")
+
+    debugCompile project(path: ':app5', configuration: "debug")
+    releaseCompile project(path: ':app5', configuration: "release")
+
+    debugCompile project(path: ':app6', configuration: "debug")
+    releaseCompile project(path: ':app6', configuration: "release")
+
 }
