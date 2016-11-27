@@ -15,7 +15,7 @@ public class SecondActivity extends AppCompatActivity {
     TextView textView;
 
     public void doSmth() {
-        new Foo149().foo4();
+        new Foo149().foo5();
     }
 
     @Override

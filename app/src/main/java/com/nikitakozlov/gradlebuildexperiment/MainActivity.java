@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        new Foo20().foo3();
+        new Foo20().foo4();
         new SecondActivity().doSmth();
         new ThirdActivity().doSmth();
         new ForthActivity().doSmth();
