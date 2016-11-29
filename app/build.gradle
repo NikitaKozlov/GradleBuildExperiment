@@ -34,9 +34,6 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
 
-    debugCompile project(path: ':app2', configuration: "debug")
-    releaseCompile project(path: ':app2', configuration: "release")
-
-    debugCompile project(path: ':app3', configuration: "debug")
-    releaseCompile project(path: ':app3', configuration: "release")
+    compile project(path: ':app2')
+    compile project(path: ':app3')
 }
