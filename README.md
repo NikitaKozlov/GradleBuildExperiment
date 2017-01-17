@@ -1,13 +1,15 @@
 # GradleBuildExperiment
-Android experiment that clarify dependency between amount of modules and build time.
+Android experiment that clarify dependency between amount of modules and incremental build time.
+You can find more details and results of this experiment here.
 
 ### Problem
-If in a single-module project one class is changed, gradle have to recompile the project. 
+If in a single-module project one class is changed, gradle have to recompile the whole project.
 
 ### Hypothesis
-If project have multiple modules, then gradle recompile only changed module. That should decrease build time.
+Incremental build for a project with multiple modules is faster then for a single-module project, because only modified modules are recompiled while the rest — not.
 
 ## Structure
-Every branch will have it's own configuration, that will be described in README.
+Every branch will have it's own configuration, that is described in README.
+
 
 
