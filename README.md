@@ -10,9 +10,17 @@ Incremental build for a project with multiple modules is faster then for a singl
 
 ## Structure
 Every branch will have it's own configuration. All configurations has around 90 000 methods splitted among 15 000 classes.
-* [1 module](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/1module) initial state.
-* [3 modules](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/3modules) code is equally split between 3 modules.
-* [5 modules](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/5modules) code is equally split between 5 modules.
+Configurations are listed roughly in order they mentioned in the article.
+* [1 module](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/1module). Initial state.
+* [3 modules](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/3modules). Code is equally split between 3 modules.
+* [3 modules release conf](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/3modules_releaseconf). Code is equally split between 3 modules. But both debug and release versions of application depends on release versions of library modules.
+* [5 modules](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/5modules). Code is equally split between 5 modules.
+* [3 + 1 modules](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/3+1modules). Code is equally split between 3 library modules. Application module is tiny.
+* [5 + 1 modules](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/5+1modules). Code is equally split between 5 library modules. Application module is tiny.
+* [1 module without Annotation processors](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/1module-apt). The only configuration without Annotation Processors.
+* [1 module API 21](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/1module_api21). Like initial state, but `minSdk` is 21.
+* [5 + 1 modules API 21](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/5%2B1modules_api21). Exactly like *5 + 1* configuration, but `minSdk` is 21.
+
 
 
 
