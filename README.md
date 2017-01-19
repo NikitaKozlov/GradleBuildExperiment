@@ -8,7 +8,7 @@ If in a single-module project one class is changed, gradle have to recompile the
 ### Hypothesis
 Incremental build for a project with multiple modules is faster then for a single-module project, because only modified modules are recompiled while the rest — not.
 
-## Structure
+### Structure
 Every branch will have it's own configuration. All configurations has around 90 000 methods splitted among 15 000 classes.
 Configurations are listed roughly in order they mentioned in the article.
 * [1 module](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/1module). Initial state.
@@ -21,7 +21,9 @@ Configurations are listed roughly in order they mentioned in the article.
 * [1 module API 21](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/1module_api21). Like initial state, but `minSdk` is 21.
 * [5 + 1 modules API 21](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/5%2B1modules_api21). Exactly like *5 + 1* configuration, but `minSdk` is 21.
 
-
+### Results
+Below you can find final results for incremental build time. For best case it was reduced from *1m 10s* to *17s*. For more explanation please read the article.
+![Results](final_results.jpg)
 
 
 
