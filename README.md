@@ -1,6 +1,7 @@
 # GradleBuildExperiment. 3+1 configuration.
 Android experiment that clarify dependency between amount of modules and incremental build time.
-You can find more details and results of this experiment here.
+You can find more details and results of this experiment [here](https://medium.com/@nikita.kozlov/how-modularisation-affects-build-time-of-an-android-application-43a984ce9968#.c4ty1onb1)
+.
 
 ### Problem
 If in a single-module project one class is changed, gradle have to recompile the whole project.
@@ -22,7 +23,8 @@ Configurations are listed roughly in order they mentioned in the article.
 * [5 + 1 modules API 21](https://github.com/NikitaKozlov/GradleBuildExperiment/tree/5%2B1modules_api21). Exactly like *5 + 1* configuration, but `minSdk` is 21.
 
 ### Results
-Below you can find final results for incremental build time. For best case it was reduced from *1m 10s* to *17s*. For more explanation please read the article.
+Below you can find final results for incremental build time. For best case it was reduced from *1m 10s* to *17s*. For more explanation please read [the article](https://medium.com/@nikita.kozlov/how-modularisation-affects-build-time-of-an-android-application-43a984ce9968#.c4ty1onb1)
+.
 ![Results](final_results.jpg)
 
 
